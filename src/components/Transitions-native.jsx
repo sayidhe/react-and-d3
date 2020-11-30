@@ -7,17 +7,17 @@ const AnimatedCirclesNative = () => {
   const allCircles = [0, 1, 2, 3, 4, 5]
 
   const generateCircles = () => (
-    Array(1).fill(0).map(() => ([
-      Math.floor(Math.random() * 6)
-    ]))
+    Array.from(Array(Math.floor(Math.random() * 6)).keys())
   )
 
   const [visibleCircles, setVisibleCircles] = useState(
     generateCircles()
   )
 
+  // allCircles.map(d => (console.log(d)))
   console.log(generateCircles())
   console.log(visibleCircles)
+  console.log(visibleCircles.includes(1))
 
   useInterval(() => {
     setVisibleCircles(generateCircles())
