@@ -15,9 +15,9 @@ const AnimatedCirclesNative = () => {
   )
 
   // allCircles.map(d => (console.log(d)))
-  console.log(generateCircles())
-  console.log(visibleCircles)
-  console.log(visibleCircles.includes(1))
+  // console.log(generateCircles())
+  // console.log(visibleCircles)
+  // console.log(visibleCircles.includes(1))
 
   useInterval(() => {
     setVisibleCircles(generateCircles())

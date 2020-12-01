@@ -6,8 +6,8 @@ const CircleReact = () => {
     <svg>
       <circle
         cx="150"
-        cy="77"
-        r="40"
+        cy="70"
+        r="50"
       />
     </svg>
   )
