@@ -8,7 +8,9 @@ import CirclesNative from './components/Circles-native';
 import AnimatedCirclesD3 from './components/Transitions-d3';
 import AnimatedCirclesNative from './components/Transitions-native';
 import AxisD3 from './components/Axis-d3';
-import AxisNative from './components/Axis-native'
+import AxisNative from './components/Axis-native';
+import AxisNativeProps from './components/Axis-native-props';
+import ChartWithDimensions from './components/Chart-with-Dimensions';
 import './App.scss';
 
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
       <AnimatedCirclesNative />
       <AxisD3 />
       <AxisNative />
+      <AxisNativeProps domain={[0, 100]} range={[10, 290]} />
+      <ChartWithDimensions />
     </div>
   )
 }
