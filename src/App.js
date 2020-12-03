@@ -11,6 +11,7 @@ import AxisD3 from './components/Axis-d3';
 import AxisNative from './components/Axis-native';
 import AxisNativeProps from './components/Axis-native-props';
 import ChartWithDimensions from './components/Chart-with-Dimensions';
+import Counter from './components/Input-with-delay'
 import './App.scss';
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <AxisNative />
       <AxisNativeProps domain={[0, 100]} range={[10, 290]} />
       <ChartWithDimensions />
+      <Counter />
     </div>
   )
 }
